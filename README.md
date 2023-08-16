@@ -18,7 +18,9 @@ Dealing with anything that requires authentication or authorization. You will ne
 6. Built in error handling and warnings to inform developer when they have done something incorrectly and how to resolve it
 
 # Usage
-Make sure that you run api.SetURL( "your url here" ) before attempting to use api.Call( ... ) otherwise the library will intentionally refuse to attempt making any requests as it would simply error anyways without a set url.
+
+>Make sure that you run api.SetURL( "your url here" ) before attempting to use api.Call( ... )
+>otherwise the library will intentionally refuse to attempt making any requests as it would simply error anyways without a set url.
 
 ## api.Add( id, route, cback, onError, cacheTTL, customHeaders )
 Used to create a new API method
