@@ -19,8 +19,7 @@ Dealing with anything that requires authentication or authorization. You will ne
 Make sure that you run api.SetURL( "your url here" ) before attempting to use api.Call( ... ) otherwise the library will intentionally refuse to attempt making any requests as it would simply error anyways without a set url.
 
 ## api.Add( id, route, cback, onError, cacheTTL, customHeaders )
-
->Used to create a new API method
+Used to create a new API method
 
 PARAMETER | TYPE | DESCRIPTION
 --- | --- | ---
@@ -31,73 +30,52 @@ onError | function | A callback function for custom error handling
 cacheTTL | number | Amount of seconds to cache the response from the API
 customHeaders | table | Optional custom http headers to use for the route. will overide default API headers
 
-
-
 ## api.Remove( id )
-
->Used to remove an API method
+Used to remove an API method
 
 PARAMETER | TYPE | DESCRIPTION
 --- | --- | ---
 id | string | The method to be removed
 
-
-
 ## api.Call( id, params )
+Used to call an API method
 
->Used to call an API method
+>Shorthand way to call a method would be **api( id, params )**
 
 PARAMETER | TYPE | DESCRIPTION
 --- | --- | ---
 id | string | The method to run
 params | table | The parameters to pass to the API route
 
-
-
 ## api.GetTable()
-
->Used to get the API method table
-
+Used to get the API method table
 
 ## api.SetUrl( url )
-
->Used to set the current API url
+Used to set the current API url
 
 PARAMETER | TYPE | DESCRIPTION
 --- | --- | ---
 url | string | The url for the API to use
 
-
-
 ## api.AddHeader( header, value )
-
->Used to add a default API header
+Used to add a default API header
 
 PARAMETER | TYPE | DESCRIPTION
 --- | --- | ---
 header | string | The default header to be added
 value | string | The value to set the header to
 
-
-
 ## api.SetHeader( header, value )
-
->Used to modify a default API header
+Used to modify a default API header
 
 PARAMETER | TYPE | DESCRIPTION
 --- | --- | ---
 header | string | The default header to be modified
 value | string | The value to set the header to
 
-
-
 ## api.RemoveHeader( header )
-
->Used to remove a default API header
+Used to remove a default API header
 
 PARAMETER | TYPE | DESCRIPTION
 --- | --- | ---
 header | string | The default header to be removed
-
-
-
