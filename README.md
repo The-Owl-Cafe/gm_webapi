@@ -8,63 +8,56 @@
 
 
 # Usage
->### api.Add( id, route, cback, onError, cacheTTL, customHeaders )
+### api.Add( id, route, cback, onError, cacheTTL, customHeaders )
 >Used to create a new API method
+>params:
+> - id				    string		  The ID for the method to call
+> - route			    string		  The route for the API to use
+> - cback			    function	  The callback function to run when the API responds
+> - onError			  function	  A callback function for custom error handling
+> - cacheTTL		  number		  Amount of seconds to cache the response from the API
+> - customHeaders	table		    Optional custom http headers to use for the route. will overide default API headers
 
-params:
-	id				    string		  The ID for the method to call
-	route			    string		  The route for the API to use
-	cback			    function	  The callback function to run when the API responds
-	onError			  function	  A callback function for custom error handling
-	cacheTTL		  number		  Amount of seconds to cache the response from the API
-	customHeaders	table		    Optional custom http headers to use for the route. will overide default API headers
 
-
->### api.Remove( id )
+### api.Remove( id )
 >Used to remove an API method
+>params:
+> - id		string		The method to be removed
 
-params:
-	id		string		The method to be removed
 
-
->### api.Call( id, params )
+### api.Call( id, params )
 >Used to call an API method
+>params:
+> - id		  string		The method to run
+> - params	table		  The parameters to pass to the API route
 
-params:
-	id		  string		The method to run
-	params	table		  The parameters to pass to the API route
 
-
->### api.GetTable()
+### api.GetTable()
 >Used to get the API method table
 
->### api.SetUrl( url )
+### api.SetUrl( url )
 >Used to set the current API url
+>params:
+> - url		string		The url for the API to use
 
-params:
-  url		string		The url for the API to use
 
-
->### api.AddHeader( header, value )
+### api.AddHeader( header, value )
 >Used to add a default API header
+>params:
+> - header		string		The default header to be added
+> - value		  string		The value to set the header to
 
-params:
-	header		string		The default header to be added
-	value		  string		The value to set the header to
 
-
->### api.SetHeader( header, value )
+### api.SetHeader( header, value )
 >Used to modify a default API header
+>params:
+> - header		string		The default header to be added
+> - value		  string		The value to set the header to
 
-params:
-	header		string		The default header to be added
-	value		  string		The value to set the header to
 
-
->### api.RemoveHeader( header )
+### api.RemoveHeader( header )
 >Used to remove a default API header
-
-params:
-	header		string		The default header to be removed
+>params:
+> - header		string		The default header to be removed
 
 
