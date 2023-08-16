@@ -1,10 +1,13 @@
+# Why this was created and what is it's purpose
+In front end development there are useful libraries that can be used in place of fetch( url ).then( ... ), they make web development a little easier when dealing with APIs and handle certain things for you so that you can focus and building your components for your apps. In web development we also have libraries for caching data for periods of time and only updating the data after a certain amount of time has passed. And finally in garry's mod there is the hook library which allows us to setup functions that get called when events get triggered and to create our own custom events which we can make the game call aswell.
+
+This library attempts to provide a hybrid of these things for Garry's Mod with minimal impact to performance and to make maintaining projects using it more easily and efficiently, allowing you to focuse more on creating addons and gamemodes and less time having to write out your own way of interacting with your webAPI.
+
 # What this is meant to be used for
 For publicly usable APIs and retrieving data that needs to be cached and updated in intervals, and to do so with most of the logic behind it already written for you.
 
-
 # What this is not meant to be used for
 Dealing with anything that requires authentication or authorization. You will need to implement these two things yourself. This may change later but for now this is not something I have the time or motivation to bother with.
-
 
 # Features
 1. Built in type checking for parameters passed to it's functions
@@ -13,7 +16,6 @@ Dealing with anything that requires authentication or authorization. You will ne
 4. Built in optional caching of responses with cacheTTL
 5. Traditional lua library usage and Short hand usage options
 6. Built in error handling and warnings to inform developer when they have done something incorrectly and how to resolve it
-
 
 # Usage
 Make sure that you run api.SetURL( "your url here" ) before attempting to use api.Call( ... ) otherwise the library will intentionally refuse to attempt making any requests as it would simply error anyways without a set url.
