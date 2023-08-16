@@ -8,8 +8,8 @@
 
 
 # Usage
-### api.Add( id, route, cback, onError, cacheTTL, customHeaders )
-Used to create a new API method
+>### api.Add( id, route, cback, onError, cacheTTL, customHeaders )
+>Used to create a new API method
 
 params:
 	id				    string		  The ID for the method to call
@@ -20,49 +20,49 @@ params:
 	customHeaders	table		    Optional custom http headers to use for the route. will overide default API headers
 
 
-### api.Remove( id )
-Used to remove an API method
+>### api.Remove( id )
+>Used to remove an API method
 
 params:
 	id		string		The method to be removed
 
 
-### api.Call( id, params )
-Used to call an API method
+>### api.Call( id, params )
+>Used to call an API method
 
 params:
 	id		  string		The method to run
 	params	table		  The parameters to pass to the API route
 
 
-### api.GetTable()
-Used to get the API method table
+>### api.GetTable()
+>Used to get the API method table
 
-### api.SetUrl( url )
-Used to set the current API url
+>### api.SetUrl( url )
+>Used to set the current API url
 
 params:
   url		string		The url for the API to use
 
 
-### api.AddHeader( header, value )
-Used to add a default API header
+>### api.AddHeader( header, value )
+>Used to add a default API header
 
 params:
 	header		string		The default header to be added
 	value		  string		The value to set the header to
 
 
-### api.SetHeader( header, value )
-Used to modify a default API header
+>### api.SetHeader( header, value )
+>Used to modify a default API header
 
 params:
 	header		string		The default header to be added
 	value		  string		The value to set the header to
 
 
-### api.RemoveHeader( header )
-Used to remove a default API header
+>### api.RemoveHeader( header )
+>Used to remove a default API header
 
 params:
 	header		string		The default header to be removed
