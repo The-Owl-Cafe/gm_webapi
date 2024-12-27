@@ -1,3 +1,5 @@
+# NOTICE: Owl Cafe is marking this as Legacy use and is or has already phased out it's usage. We have migrated aspects involving http outside of garry's mod and as such this is nolonger needed. We are keeping it here for research purposes.
+
 # Why this was created and what is it's purpose
 In front end development there are useful libraries that can be used in place of fetch( url ).then( ... ), they make web development a little easier when dealing with APIs and handle certain things for you so that you can focus and building your components for your apps. In web development we also have libraries for caching data for periods of time and only updating the data after a certain amount of time has passed. And finally in garry's mod there is the hook library which allows us to setup functions that get called when events get triggered and to create our own custom events which we can make the game call aswell.
 
